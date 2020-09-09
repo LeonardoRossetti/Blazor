@@ -1,0 +1,12 @@
+﻿
+<td><button @onclick="(() => RemoveTask.InvokeAsync(item))"><i class="oi oi-trash"></i></button></td>
+<td>@item.Creation</td>
+<td>@item.Description</td>
+<td><input type="checkbox" @bind="@item.Done" />@item.Done</td>
+
+@code {
+    [Parameter] public TaskItem item { get; set; }
+
+    // passa an event as parameter
+    [Parameter] public EventCallback<TaskItem> RemoveTask { get; set; }
+}

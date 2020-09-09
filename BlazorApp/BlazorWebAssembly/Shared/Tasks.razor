@@ -1,0 +1,86 @@
+﻿<h1>@Title</h1>
+<hr />
+
+@if (tasks == null)
+{
+    <Alert Message="Loading...">
+        <ChildContent1>
+            <img src="https://media.giphy.com/media/8L0Pky6C83SzkzU55a/giphy.gif" />
+        </ChildContent1>
+        <ChildContent2>
+            <span>Error when loading tasks.</span>
+        </ChildContent2>
+    </Alert>
+}
+else if (!tasks.Any())
+{
+    <Alert Message="No tasks were created...">
+        <ChildContent2>
+            <div class="row">
+                <div class="col-6">
+                    <img src="https://media.giphy.com/media/17mNCcKU1mJlrbXodo/giphy.gif" />
+                </div>
+                <div class="col-6">
+                    <span>Please create one task.</span>
+                </div>
+            </div>
+        </ChildContent2>
+    </Alert>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <td>Action</td>
+                <td>Date</td>
+                <td>Description</td>
+                <td>Done</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in tasks)
+            {
+                <tr>
+                    <TaskInvidual item="item" RemoveTask="RemoveTask" />
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@if (tasks != null)
+{
+    <div class="form-group">
+        <label>Task</label>
+        <input type="text" placeholder="Inform the task test" @bind="newTask" />
+        <button class="btn btn-primary" @onclick="AddNewTask">Create new task</button>
+    </div>
+}
+
+
+@code{
+    [Parameter] public List<TaskItem> tasks { get; set; }
+    [Parameter] public string Title { get; set; }
+
+    private string newTask = "";
+
+    void AddNewTask()
+    {
+        if (!string.IsNullOrWhiteSpace(newTask))
+        {
+            tasks.Add(new TaskItem()
+            {
+                Creation = DateTime.Now,
+                Description = newTask,
+                ID = Guid.NewGuid()
+            });
+            newTask = "";
+        }
+    }
+
+    void RemoveTask(TaskItem task)
+    {
+        tasks.Remove(tasks.First(t => t.ID == task.ID));
+    }
+}

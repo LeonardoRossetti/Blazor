@@ -1,0 +1,18 @@
+﻿@page "/"
+@inject HttpClient Http
+
+<Tasks Title="List of tasks" tasks="GetTasks()" />
+
+@code {
+    private List<TaskItem> _tasks = new List<TaskItem>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        _tasks = await Http.GetFromJsonAsync<List<TaskItem>>("Data/tasks.json");
+    }
+
+    private List<TaskItem> GetTasks()
+    {
+        return _tasks;
+    }
+}
