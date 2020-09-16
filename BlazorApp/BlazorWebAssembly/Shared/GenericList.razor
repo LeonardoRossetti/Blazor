@@ -1,0 +1,41 @@
+﻿@typeparam T
+
+@if (ItemList == null)
+{
+    if (Loading == null)
+    {
+        <img src="https://media.giphy.com/media/8L0Pky6C83SzkzU55a/giphy.gif" />
+        <text>Loading</text>
+    }
+    else
+    {
+        @Loading
+    }
+}
+else if (!ItemList.Any())
+{
+    if (NoItems == null)
+    {
+        <img src="https://media.giphy.com/media/17mNCcKU1mJlrbXodo/giphy.gif" />
+        <text>There are no items</text>
+    }
+    else
+    {
+        @NoItems
+    }
+}
+else
+{
+    foreach (var element in ItemList)
+    {
+        <tr>@ListRender(element)</tr>
+    }
+}
+
+@code {
+    [Parameter] public RenderFragment Loading { get; set; }
+    [Parameter] public RenderFragment NoItems { get; set; }
+    [Parameter] public List<T> ItemList { get; set; }
+    [Parameter] public RenderFragment<T> ListRender { get; set; }
+
+}

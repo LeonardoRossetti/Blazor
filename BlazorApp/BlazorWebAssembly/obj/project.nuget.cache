@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "M7dD6jMd9PUY07CYtm6GNHWd7NSdJ10Z0qCQN23QJ1SSPsbK8ZlxeykLXP08pwv2sXgLNBwImXasY8UzowsyWA==",
+  "dgSpecHash": "xkrtklx7URK1P4dd79UJ5R8VIyBYAqBc67utECgAUysvYHhFxoUAgp6NTpG1iDqvFuqM+sb11sISc6bjY/5Maw==",
   "success": true,
-  "projectFilePath": "C:\\Projects\\Blazor\\BlazorApp\\BlazorWebAssembly\\BlazorWebAssembly.csproj",
+  "projectFilePath": "C:\\Projects\\Blazor\\Blazor\\BlazorApp\\BlazorWebAssembly\\BlazorWebAssembly.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\E6530\\.nuget\\packages\\microsoft.aspnetcore.authorization\\3.1.6\\microsoft.aspnetcore.authorization.3.1.6.nupkg.sha512",
     "C:\\Users\\E6530\\.nuget\\packages\\microsoft.aspnetcore.components\\3.1.6\\microsoft.aspnetcore.components.3.1.6.nupkg.sha512",

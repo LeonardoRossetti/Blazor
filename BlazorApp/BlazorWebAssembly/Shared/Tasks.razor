@@ -1,7 +1,7 @@
 ﻿<h1>@Title</h1>
 <hr />
 
-@if (tasks == null)
+@*@if (tasks == null)
 {
     <Alert Message="Loading...">
         <ChildContent1>
@@ -28,26 +28,33 @@ else if (!tasks.Any())
     </Alert>
 }
 else
-{
+{*@
     <table class="table">
         <thead>
             <tr>
-                <td>Action</td>
-                <td>Date</td>
-                <td>Description</td>
-                <td>Done</td>
+                <th>Action</th>
+                <th>Date</th>
+                <th>Description</th>
+                <th>Done</th>
             </tr>
         </thead>
         <tbody>
-            @foreach (var item in tasks)
+            <GenericList ItemList="tasks">
+                <ListRender>
+                    <TaskInvidual item="context" RemoveTask="RemoveTask" />
+                </ListRender>
+            </GenericList>
+
+
+            @*@foreach (var item in tasks)
             {
                 <tr>
                     <TaskInvidual item="item" RemoveTask="RemoveTask" />
                 </tr>
-            }
+            }*@
         </tbody>
     </table>
-}
+@*}*@
 
 @if (tasks != null)
 {

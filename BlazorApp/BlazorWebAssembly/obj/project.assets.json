@@ -1643,11 +1643,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\Blazor\\BlazorApp\\BlazorWebAssembly\\BlazorWebAssembly.csproj",
+      "projectUniqueName": "C:\\Projects\\Blazor\\Blazor\\BlazorApp\\BlazorWebAssembly\\BlazorWebAssembly.csproj",
       "projectName": "BlazorWebAssembly",
-      "projectPath": "C:\\Projects\\Blazor\\BlazorApp\\BlazorWebAssembly\\BlazorWebAssembly.csproj",
+      "projectPath": "C:\\Projects\\Blazor\\Blazor\\BlazorApp\\BlazorWebAssembly\\BlazorWebAssembly.csproj",
       "packagesPath": "C:\\Users\\E6530\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\Blazor\\BlazorApp\\BlazorWebAssembly\\obj\\",
+      "outputPath": "C:\\Projects\\Blazor\\Blazor\\BlazorApp\\BlazorWebAssembly\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -1711,7 +1711,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
