@@ -721,6 +721,8 @@ C:\Projects\Blazor\Blazor\BlazorApp\BlazorWebAssembly\obj\Debug\netstandard2.1\B
 C:\Projects\Blazor\Blazor\BlazorApp\BlazorWebAssembly\obj\Debug\netstandard2.1\BlazorWebAssembly.pdb
 C:\Projects\Blazor\Blazor\BlazorApp\BlazorWebAssembly\obj\Debug\netstandard2.1\RazorDeclaration\Pages\LifeCicle.razor.g.cs
 C:\Projects\Blazor\Blazor\BlazorApp\BlazorWebAssembly\obj\Debug\netstandard2.1\Razor\Pages\LifeCicle.razor.g.cs
-C:\Projects\Blazor\Blazor\BlazorApp\BlazorWebAssembly\obj\Debug\netstandard2.1\integrity\IszJ5Kiy-fzQZDvecnjlLMTzIEgUos6s5bD9PQavdSI=.hash
-C:\Projects\Blazor\Blazor\BlazorApp\BlazorWebAssembly\obj\Debug\netstandard2.1\integrity\803fFFrmOTb0kWkK_usyBNKnJP-BSIaVZ7AHdN2sJ-s=.hash
-C:\Projects\Blazor\Blazor\BlazorApp\BlazorWebAssembly\obj\Debug\netstandard2.1\integrity\Vzpk8hrzYxv5QCGVCd--XF_pfk49vW9zWJI-KYjmDlo=.hash
+C:\Projects\Blazor\Blazor\BlazorApp\BlazorWebAssembly\obj\Debug\netstandard2.1\RazorDeclaration\Pages\Counter.razor.g.cs
+C:\Projects\Blazor\Blazor\BlazorApp\BlazorWebAssembly\obj\Debug\netstandard2.1\Razor\Pages\Counter.razor.g.cs
+C:\Projects\Blazor\Blazor\BlazorApp\BlazorWebAssembly\obj\Debug\netstandard2.1\integrity\E0t3PS4JxAkZ-FS3Qm8oR5ZzUdKQIKNHwy59oYZByuc=.hash
+C:\Projects\Blazor\Blazor\BlazorApp\BlazorWebAssembly\obj\Debug\netstandard2.1\integrity\l7B2d4-k1tClEi57CTr7f4f931BKVugHIw9FOEnBqO4=.hash
+C:\Projects\Blazor\Blazor\BlazorApp\BlazorWebAssembly\obj\Debug\netstandard2.1\integrity\uZL9V9YXNh8esnL94D6wvZ9lwelNCzKvD1LSUvMT4cQ=.hash

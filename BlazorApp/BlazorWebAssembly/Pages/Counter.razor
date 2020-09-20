@@ -1,0 +1,17 @@
+﻿@page "/Counter"
+@inject ServicesScoped
+
+<h3>Counter</h3>
+
+<label class="text-info">Current Value: @CurrentValue</label>
+<br />
+<button class="btn btn-primary" @onclick="IncrementValue">Increment Value</button>
+
+@code {
+    public int CurrentValue { get; set; }
+
+    void IncrementValue()
+    {
+        CurrentValue++;
+    }
+}

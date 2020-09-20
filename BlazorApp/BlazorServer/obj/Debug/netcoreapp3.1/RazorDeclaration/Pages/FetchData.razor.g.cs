@@ -77,6 +77,13 @@ using BlazorServer.Shared;
 #line hidden
 #nullable disable
 #nullable restore
+#line 10 "C:\Projects\Blazor\Blazor\BlazorApp\BlazorServer\_Imports.razor"
+using BlazorServer.Services;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 3 "C:\Projects\Blazor\Blazor\BlazorApp\BlazorServer\Pages\FetchData.razor"
 using BlazorServer.Data;
 

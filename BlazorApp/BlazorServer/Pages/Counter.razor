@@ -1,8 +1,19 @@
 ﻿@page "/counter"
+@inject ServiceScoped scoped
+@inject ServiceSingleton singleton
+@inject ServiceTransient transient
 
 <h1>Counter</h1>
 
 <p>Current count: @currentCount</p>
+
+<p>Scoped count: @scoped.Value</p>
+<p>Singleton count: @singleton.Value</p>
+<p>Transient count: @transient.Value</p>
+
+<br />
+<b>To test the services: add some values, go to other pages and come back here.</b>
+<br />
 
 <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
 
@@ -12,5 +23,8 @@
     private void IncrementCount()
     {
         currentCount++;
+        scoped.Value++;
+        transient.Value++;
+        singleton.Value++;
     }
 }

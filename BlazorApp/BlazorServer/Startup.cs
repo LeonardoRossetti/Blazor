@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using BlazorServer.Data;
+using BlazorServer.Services;
 
 namespace BlazorServer
 {
@@ -29,6 +30,9 @@ namespace BlazorServer
             services.AddRazorPages();
             services.AddServerSideBlazor();
             services.AddSingleton<WeatherForecastService>();
+            services.AddScoped<ServiceScoped>(); // when user leaves the app and returns, the data is losted
+            services.AddSingleton<ServiceSingleton>(); // keeps data even when refreshing the page
+            services.AddTransient<ServiceTransient>(); // created a new instance every time we call it or refresh the page
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
