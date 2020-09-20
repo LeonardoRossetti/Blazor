@@ -1,0 +1,40 @@
+﻿@page "/lifeCicle"
+
+@implements IDisposable
+
+<h3>@Title</h3>
+<h2>Component rendered at @RenderTime</h2>
+
+
+@code {
+    public string Title { get; set; }
+    public string RenderTime { get; set; }
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        RenderTime = DateTime.Now.ToLongTimeString();
+        Console.WriteLine($"Component initialized at: {RenderTime}");
+    }
+
+    protected override void OnParametersSet()
+    {
+        base.OnParametersSet();
+        RenderTime = DateTime.Now.ToLongTimeString();
+        Console.WriteLine($"On parameter Set executed at: {RenderTime}");
+    }
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        base.OnAfterRender(firstRender);
+        RenderTime = DateTime.Now.ToLongTimeString();
+        Console.WriteLine($"First time executing = {firstRender}");
+        Console.WriteLine($"On after render executed at: {RenderTime}");
+    }
+
+    public void Dispose()
+    {
+        RenderTime = DateTime.Now.ToLongTimeString();
+        Console.WriteLine($"Component dispose: {RenderTime}");
+    }
+}
